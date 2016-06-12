@@ -1,0 +1,21 @@
+<html>
+
+  <head>
+    <title>Trips to Places</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+
+  <body>
+  <% for (var i = 0; i < results.length; i++ ){
+    var location = results[i];
+    %>
+    <div>
+      <h2><%=location.country%> - <%=location.name%></h2>
+      <img src="/images/<%=location.image_name%>""></img>
+      <p><%=location.description%></p>
+      <p>Rating: <%=location.rating%> (out of 10)</p>
+    </div>
+   <% } %>
+
+  </body>
+</html>
